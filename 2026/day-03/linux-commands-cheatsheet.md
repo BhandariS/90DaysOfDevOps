@@ -1,1 +1,14 @@
+--> TO CREATE A DIRECTORY -- mdir <directoryname> { Empty Directory }
+--> TO CREATE A FILE -- touch <filename>
+--> TO COPY FILE -- cp <srcfile> <tgtfile>
+--> TO MOVE FILE -- mv <srcfilename> <destination>
+--> TO RENAME FILE -- mv <oldfilename> <newfilename>
+--> TO DELETE FILE -- rm <filename>
+--> TO DELETE EMPYT REPO -- rmdir <directoryname>
+--> TO DELETE REPO WITH CONTENT --  rm -r <directoryname>
+--> TO FORCE DELETE DIRCETORY -- rm -rf <directoryname> { Ddeletion is permanent and cannot be easily recovered.} 
 
+--> TO PING A WEBSITE -- ping <sitename>
+--> TO FIND IP ADDRESS -- ip addr
+--> TO CHECK ACTIVE PROCESS -- ps
+-->
