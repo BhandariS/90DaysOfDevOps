@@ -8,3 +8,7 @@ Ran a service in Instance - Ping Google.com
   >> pgrep command filter the running process based on the given criteris(eg. pattern, user Id, name) and it lists all process         ids of those matches.
         { pgrep ping (find all running  process starts with ping)}
         { pgrep -l ping(-l(list name) option displays both PID and process name }
+
+<!-- Service Commands -->
+
+>> systemctl status -- this commands provides a comprehensive overview of a systemd unit (service, socket, device, etc.), showing its active state (running, exited, failed), whether it is enabled to start on boot, process IDs (PID), and recent journal log entries. It is the primary tool for troubleshooting and verifying service health. 
