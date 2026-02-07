@@ -25,3 +25,12 @@ What is Shell?
 | Shebang required      | ❌ No          | ✅ Yes        |
 | Used in production    | ⚠️ Rare        | ✅ Always     |
 | Jenkins / cron        | ❌             | ✅            |
+
+
+<!-- Variables -->
+// With variables we can use same script in multiple environments
+// we can define jenkins parameters in scripts
+
+// when using variable inside strings it hhas to be double quotes
+  eg --> echo "Hello $Name"
+
