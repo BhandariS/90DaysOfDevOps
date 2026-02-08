@@ -14,7 +14,7 @@ What is Shell?
 *vim <filename.sh> - Opens a terminal for text editor , good for programmming , fast 
 *#!/bin/bash - Shebang - A shebang (#!) is the first line in a Unix-like script that tells the operating system which interpreter to use (e.g., bash, python, perl) to execute the code.
 *echo "Txt" - Prints text to terminal
-*chmod - chmod +x filename.sh - makes the file executable
+*chmod - chmod +x filename.sh - makes the file executable (Change mode) =x will make fle executable for everyone
 *bash file.sh - explicitly runs script with bash
 *./file.sh - Runs the script from the current directory, it is standar execution style everywhere
 * diff between bash file.sh and ./file.sh
