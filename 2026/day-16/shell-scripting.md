@@ -68,3 +68,21 @@ else
         echo "No is Zero"
 fi
 
+
+<!-- Check if file exist -->
+>> -f -- check regular files , returns true if file exist
+>> -d -- check for directory
+>> -l -- logical Not , check if directory exists
+>> -s -- checks if file is not empty, ensuring deployment manifest has content
+
+#eg: 
+#!/bin/bash
+
+read -p "Enter File Name:" filename
+
+if [ -f "$filename" ]; then
+        echo "File Exist : $filename"
+else
+        echo "$filename File does not exist"
+fi
+
