@@ -74,6 +74,7 @@ fi
 >> -d -- check for directory
 >> -l -- logical Not , check if directory exists
 >> -s -- checks if file is not empty, ensuring deployment manifest has content
+>> -z -- checks if a string is EMPTY (zero length). helpful when passing an argument
 
 #eg: 
 #!/bin/bash
