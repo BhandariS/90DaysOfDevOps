@@ -30,8 +30,8 @@ What is Shell?
   eg --> echo "Hello $Name"
 
 <!-- Variables -->
-// With variables we can use same script in multiple environments
-// we can define jenkins parameters in scripts
+>> With variables we can use same script in multiple environments
+>> we can define jenkins parameters in scripts
 
 // eg 
 #!/bin/bash
@@ -42,8 +42,8 @@ Role="DevOps"
 echo "Hello, I am $Name and I am a $Role"
 
 <!-- User Input -->
-read pauses the script, waits for input from the user, and stores that input in a variable.
-What -p does -- Prints the prompt before waiting for input Avoids using a separate echo
+>> read pauses the script, waits for input from the user, and stores that input in a variable.
+>> What -p does -- Prints the prompt before waiting for input Avoids using a separate echo
 
 #eg : 
 #!/bin/bash
