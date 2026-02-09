@@ -31,5 +31,28 @@ What is Shell?
 // With variables we can use same script in multiple environments
 // we can define jenkins parameters in scripts
 
+// eg 
+#!/bin/bash
+
+Name="Shubham"
+Role="DevOps"
+
+echo "Hello, I am $Name and I am a $Role"
+
+<!-- User Input -->
+read pauses the script, waits for input from the user, and stores that input in a variable.
+What -p does -- Prints the prompt before waiting for input Avoids using a separate echo
+
+#eg : 
+#!/bin/bash
+
+read -p "Enter your Name :" Name
+read -p "Enter your Fav Tool :" Tool
+
+echo " Hello $Name, your fav tool is $Tool"
+
+
+
+
 // when using variable inside strings it hhas to be double quotes
   eg --> echo "Hello $Name"
