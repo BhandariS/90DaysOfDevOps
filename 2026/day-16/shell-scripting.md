@@ -52,3 +52,19 @@ read -p "Enter your Name :" Name
 read -p "Enter your Fav Tool :" Tool
 
 echo " Hello $Name, your fav tool is $Tool"
+
+<!-- If--else Condition -->
+>> There must be a space after [ and before  ] as [ is a command and command requires space between arguments
+#eg:
+#!/bin/bash
+
+read -p "Enter no:" No
+
+if [ $No -gt 0 ]; then
+        echo "No is Positive"
+elif [ $No -lt 0 ]; then
+        echo "No is Negative"
+else
+        echo "No is Zero"
+fi
+
