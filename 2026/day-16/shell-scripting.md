@@ -26,6 +26,8 @@ What is Shell?
 | Used in production    | ⚠️ Rare        | ✅ Always     |
 | Jenkins / cron        | ❌             | ✅            |
 
+// when using variable inside strings it hhas to be double quotes
+  eg --> echo "Hello $Name"
 
 <!-- Variables -->
 // With variables we can use same script in multiple environments
@@ -50,9 +52,3 @@ read -p "Enter your Name :" Name
 read -p "Enter your Fav Tool :" Tool
 
 echo " Hello $Name, your fav tool is $Tool"
-
-
-
-
-// when using variable inside strings it hhas to be double quotes
-  eg --> echo "Hello $Name"
