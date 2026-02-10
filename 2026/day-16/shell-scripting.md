@@ -75,6 +75,14 @@ fi
 >> -l -- logical Not , check if directory exists
 >> -s -- checks if file is not empty, ensuring deployment manifest has content
 >> -z -- checks if a string is EMPTY (zero length). helpful when passing an argument
+>> File test operators (core ones)
+Operator	Meaning	            DevOps use
+-f	      File exists	        Config/package check
+-d	      Directory exists	  Workspace validation
+-s	      File not empty	    Ensure content exists
+-r	      Readable	          Permission check
+-w	      Writable	          Log / artifact check
+-x	      Executable	        Script/tool check
 
 #eg: 
 #!/bin/bash
