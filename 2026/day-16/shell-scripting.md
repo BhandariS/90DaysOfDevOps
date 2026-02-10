@@ -87,3 +87,36 @@ else
         echo "$filename File does not exist"
 fi
 
+<!--server_check -->
+>> systemctl is-active --quiet "$SERVICE" -- Here is-active checks if service is running and quiet only shows exit code not the output.
+eg :  0 → service is running
+     1 → service not running
+>> If you are using stings for comparison in if command the it has to be this way eg : if [ "$choice" = "y" ]; then
+eg :
+>> Create server_check.sh that:
+Stores a service name in a variable (e.g., nginx, sshd)
+Asks the user: "Do you want to check the status? (y/n)"
+If y — runs systemctl status <service> and prints whether it's active or not
+If n — prints "Skipped."
+
+#!/bin/bash
+
+Service="nginx"
+
+read -p "Do you want to check status of $Service? (y/n): " choice
+
+if [ "$choice" = "y"i ]; then
+        systemctl is-active --quiet "$Service"
+
+        if [ $? -eq 0 ]; then
+                echo "$Service is running"
+        else
+                echo "$Service is not running"
+        fi
+
+elif [ "$choice" ="n" ]; then
+        echo "Skipped."
+
+else
+        echo "Invalid input. Please enter y 0r n."
+fi
