@@ -108,7 +108,7 @@ read -p "Do you want to check status of $Service? (y/n): " choice
 if [ "$choice" = "y"i ]; then
         systemctl is-active --quiet "$Service"
         
-  //is-active → checks if service is running
+  #is-active → checks if service is running
   //--quiet → no output, only exit code
   //Exit code: 0 → service is running
          //    1 → service not running
