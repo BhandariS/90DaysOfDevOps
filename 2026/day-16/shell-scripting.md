@@ -113,7 +113,7 @@ Service="nginx"
 
 read -p "Do you want to check status of $Service? (y/n): " choice
 
-if [ "$choice" = "y"i ]; then
+if [ "$choice" = "y" ]; then
         systemctl is-active --quiet "$Service"
         
   >> is-active → checks if service is running
