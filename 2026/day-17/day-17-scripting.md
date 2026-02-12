@@ -55,6 +55,7 @@ fi
 while [ $num -gt 0 ]
 do
         echo "Countdown: $num"
+        //arithematic expression $((...)) you can do add/multiple/subst/divide/modulus inside this
         num=$((num-1))
 done
 echo "Done!"
