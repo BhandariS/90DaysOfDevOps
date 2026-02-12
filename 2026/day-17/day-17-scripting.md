@@ -1,4 +1,4 @@
->> Basic Loop Syntax
+i>> Basic Loop Syntax
 >>
 for variable in list
 do
