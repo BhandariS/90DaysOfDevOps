@@ -59,3 +59,30 @@ do
         num=$((num-1))
 done
 echo "Done!"
+
+>> <!-- Command line Arguments -->
+
+>> ./script.sh value1 value2
+       $0        $1     $2
+
+>> | Variable | Meaning                                     |
+   | -------- | ------------------------------------------- |
+   | `$0`     | Script name                                 |
+   | `$1`     | First argument                              |
+   | `$2`     | Second argument                             |
+   | `$3`     | Third argument                              |
+   | `$#`     | Total number of arguments                   |
+   | `$@`     | All arguments                               |
+   | `$*`     | All arguments (slightly different behavior) |
+>> eg
+#!/bin/bash
+
+if [ $# -lt 2 ]; then
+        echo "Usage: ./greet1.sh <first_name> <last_name>"
+        exit 1
+fi
+
+echo "Hello, $1 $2"
+
+
+    
