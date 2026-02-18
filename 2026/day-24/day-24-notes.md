@@ -28,4 +28,12 @@ after rebase
 >> Rebase is used when dev is working alone on feature branch, you want clean history before creating PR and wants linear history
 >> Merge is user when dev working on shared branch, wants history to be intact, you merging with main
 
+8. What does squash merging do?
+>> Squash treats multiple commits and turn them into 1 commit.
 
+9. When would you use squash merge vs regular merge?
+>> Regular merge we do when we want to preserve the history, for tracebility and multiple devs working on branch.
+>> Squash merge we do when we want to have one commit history, when it has small messy fixes.
+
+10. What is the trade-off of squashing?
+>> Squashing simplifies history by combining commits into one, but sacrifices detailed commit traceability, granular rollback ability, and debugging visibility.
