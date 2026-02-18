@@ -14,6 +14,16 @@
 >> To delete the branch -- git branch -D <filename>
 
 <<VIEW CHANGES>>
-git log - To check all changes happend(history) on that repo
-git status - To check the current status of working directory and staging area to see what changes are staged, which are not and which                 files are tracked or untracked
-git remote -v - This commands shows origin of repo connected
+>> git log - To check all changes happend(history) on that repo
+>> git log --oneline - To check all logs in one line
+>> git log --graph - It shows the logs  in grphn format
+>> git status - To check the current status of working directory and staging area to see what changes are staged, which are                   not and which files are tracked or untracked
+>> git remote -v - This commands shows origin of repo connected
+
+<<Advanced>>
+>> git merge <branch> - To merge the commit history of one branch to other.
+>> git rebase <main> - If you are on feature branch and use this command your history becomes linear with main.
+                     - To make 2 branches commit history is singlle sequence.
+>> git stash - 
+
+
