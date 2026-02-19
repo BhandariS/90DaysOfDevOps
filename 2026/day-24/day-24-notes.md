@@ -37,3 +37,21 @@ after rebase
 
 10. What is the trade-off of squashing?
 >> Squashing simplifies history by combining commits into one, but sacrifices detailed commit traceability, granular rollback ability, and debugging visibility.
+
+11. What is the difference between git stash pop and git stash apply?
+>> git stash pop restores them and removes the stash entry.
+>> git stash apply restores stashed changes but keeps them in the stash list.
+
+12. When would you use stash in a real-world workflow?
+>> git stash temporarily saves your uncommitted changes so you can Switch branches, Pull latest changes and Fix something quickly.
+
+13. What does cherry-pick do?
+>> We can take a certain commit from our dev branch and mmerge only specific commit to the main using cheery pick.
+>> git cherrypick <commitid>
+
+14. When would you use cherry-pick in a real project?
+>> If a Bug found during production release and Fix is committed in develop in that case we don’t want to merge full develop into release or main, we can cherry-pick only approved commits into release branch.
+
+15. What can go wrong with cherry-picking?
+>> Can create duplicates commits, if the branch is merged later.
+>> merge COnflicts can be caused
