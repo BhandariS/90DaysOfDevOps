@@ -24,6 +24,8 @@
 >> git merge <branch> - To merge the commit history of one branch to other.
 >> git rebase <main> - If you are on feature branch and use this command your history becomes linear with main.
                      - To make 2 branches commit history is singlle sequence.
->> git stash - 
-
-
+>> git stash - It helps in saving your changes temporarily while you can work on other branch and removes the stash entry.
+>> git stash pop - It helps in recover the saved changes
+>> git stash push <file> - It can stash specific files
+>> git stash apply - It restores stashed changes but keeps them in the stash list.
+>> git cherry-pick <commitid> - It helps in merging specific commit to the main
