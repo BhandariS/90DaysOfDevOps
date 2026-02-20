@@ -39,3 +39,11 @@
 >> git stash push <file> - It can stash specific files
 >> git stash apply - It restores stashed changes but keeps them in the stash list.
 >> git cherry-pick <commitid> - It helps in merging specific commit to the main
+
+<< Reset & Revert >>
+>> git reset --soft HEAD~1 - It resets last commits but keep the changes staged for recommit
+>> git reset HEAD~1 - It resets last commits and unstage the changes but keep them in your files (Working dir)
+>> git reset --hard HEAD~1 - Deletes last commit and permanently removes all associated changes.
+>> git reset --hard origin/main - Forces local branch to exactly match remote branch (discarding local changes).
+>> git revert <commithash> - Creates a new commit that undoes changes from the specified commit.
+>> git revert HEAD - Creates a new commit that reverses the latest commit.
