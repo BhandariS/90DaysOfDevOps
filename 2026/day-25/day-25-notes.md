@@ -31,3 +31,38 @@ Git will:
 >> You should not use git reset on commits that are already pushed and shared because it rewrites history and can break other developers’ branches. Instead, you should use git revert for public branches.
 * eg: Revert the changes after push amy lead to confusion in team and some dev already have the changes or getting issues wjile git pull, duplicate commits.
 
+5. How is git revert different from git reset?
+>> git reset rewrites history by moving the branch pointer, while git revert creates a new commit that undoes changes.
+
+6. Why is revert considered safer than reset for shared branches?
+>> Revert is safer for shared branches because it preserves history and avoids disrupting other developers’ work.
+
+7. When would you use revert vs reset?
+>> Use git reset when:
+* The commits are local and not pushed
+* Cleaning up commits before creating a PR
+* Squashing or editing commit history
+* Fixing a recent mistake in your own branch
+* Working alone on a feature branch
+
+>> Use git revert when:
+* The commit is already pushed
+* The branch is shared (main, release, etc.)
+* Undoing a bad production change
+* Working in team environments
+* CI/CD pipelines depend on commit history
+
+| Topic                                | `git reset`                                 |`git revert`                            |                                      |                                             |
+| ------------------------------------ | --------------------------------------------| -------------------------------------------------------------------------------------------------------------------------------------------------------------------  
+| **What it does**                     | Moves the branch pointer to a               |Creates a new commit that undoes the  
+|                                      | previous commit (rewrites history)          | changes of a previous commit  
+|                                      |                                             | 
+| **Removes commit from history?**     | ✅ Yes                                      | ❌ No (original commit remains,
+|                                      |   (commit disappears from branch history)   | a new reversing commit is added)
+|                                      |                                             |
+| **Safe for shared/pushed branches?** | ❌ No (requires force push                  | ✅ Yes (does not rewrite history)
+|                                      |    and rewrites shared history)             |                                        |                                      |                                             |
+| **When to use**                      | Local cleanup, fixing recent commits,       | Undoing a bad commit on shared         |                                      | squashing, editing history before pushing   | branches, production rollback, 
+|                                      |                                             | safe team collaboration 
+---------------------------------------|---------------------------------------------|----------------------------------------
+
