@@ -74,6 +74,7 @@ echo "Done!"
    | `$#`     | Total number of arguments                   |
    | `$@`     | All arguments                               |
    | `$*`     | All arguments (slightly different behavior) |
+   | `$?`     | Holds exit status 0=success & 1=error       |
 >> eg
 #!/bin/bash
 
