@@ -25,3 +25,24 @@ greet
 | `$`     | End of string                               |
 
 >> Means == Match string that starts and ends with digits only.
+
+
+##Arrays
+
+*Accessing Elements - echo "${fruits[0]}"
+*Print All Elements - echo "${fruits[@]}"
+*Declare Associative Array - declare -A userinfo
+-A = Associate array
+
+*Access Values - echo "${userinfo[name]}"
+*Print all keys - echo "${!userinfo[@]}"
+*Print all values - echo "${userinfo[@]}"
+
+*Loop Through Key-Value
+eg : for key in "${!userinfo[@]}"
+do
+    echo "$key → ${userinfo[$key]}"
+done
+
+# ${!array[@]} → gives keys
+# ${array[$key]} → gives value
